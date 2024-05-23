@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Credit Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="credit-card">
+      <div class="form-header">
+        <h4 class="title">Tarjeta de Crédito</h4>
+        <div class="card-logos">
+          <img src="img/mastercard.png" alt="tarjeta"  />
+          <img src="img/visa.png" alt="tarjeta" />
+          <img src="img/amex.png" alt="tarjeta" />
+        </div>
+      </div>
+      <div class="form-body">
+        <label for="card-number">Número de Tarjeta</label>
+        <input
+          type="text"
+          class="card-number"
+          placeholder="●●●● ●●●● ●●●● ●●●●"
+        />
+        <div class="date-field">
+          <div class="date-expiration">
+            <label for="card-month">Fecha de Expiración</label>
+            <input type="text" class="card-number" placeholder="MM/YY" />
+          </div>
+          <div class="postal-code">
+            <label for="postal-code">Código Postal</label>
+            <input type="text" class="card-number" />
+          </div>
+          <label for="card-cvv">CVV</label>
+          <div class="cvv-input">
+            <input type="text" placeholder="●●●" />
+          </div>
+          <div class="cvv-details">
+            <p>3 o 4 digitos en la parte</br>trasera de la tarjeta</p>
+          </div>
+        </div>
+        <button type="submit" class="proceed-btn"><a href="#">Pagar</a></button>
+      </div>
+    </form>
+  </body>
+</html>
